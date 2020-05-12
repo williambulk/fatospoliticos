@@ -30,7 +30,7 @@ Text Domain: newsup
 	1.1.Top Bar           
 -----------------------------------------*/
 .mg-head-detail {
-	padding: 10px 0 0 0;
+	padding: 0 0 0 0;
 }
 .mg-head-detail .info-left {
 	display: block;
@@ -58,6 +58,17 @@ Text Domain: newsup
 .mg-head-detail .info-left i {
 	font-size: 14px;
 	padding-right: 10px;
+}
+.info-left {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.info-left li {
+	display: inline-block;
+	margin-left: 15px;
+	padding: 0;
 }
 .info-right {
 	display: block;
@@ -144,7 +155,7 @@ Text Domain: newsup
 	font-size: 26px;
 	height: auto;
 	line-height: 25px;
-	margin-right: 50px;
+	margin: 0px auto;
 	padding: 15px 0;
 	text-shadow: 2px 2px 1px rgba(150, 150, 183, 0.18);
 }
@@ -182,7 +193,6 @@ Text Domain: newsup
 }
 .navbar-toggle {
 	border-radius: 0;
-	margin: 24px auto;
 	position: absolute;
 	right: 5%;
 	border: none;
@@ -1146,6 +1156,10 @@ button.mfp-close:hover, button.mfp-close:focus {
 /* Meida respondive for slider title and blog post title */
 
 @media screen and (min-width: 240px) and (max-width: 767px){
+
+	.hide-on-mobile {
+		display: none;
+	}
 
   .mg-blog-post .bottom h1
 {
@@ -2556,7 +2570,7 @@ footer .mg-widget .woocommerce ul.cart_list li img, footer .mg-widget .woocommer
     padding: 30px 0px;
 }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
 .navbar-toggle {
 	display: block;
 }

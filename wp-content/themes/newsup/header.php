@@ -64,7 +64,7 @@
               </div>
           </div>
           <?php } ?>
-    <div class="mg-menu-full">
+    <div class="mg-menu-full hide-on-mobile">
             <nav class="navbar navbar-default navbar-static-top navbar-wp">
                 <div class="container-fluid">
          <!-- navbar-toggle -->

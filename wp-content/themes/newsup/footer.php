@@ -25,7 +25,7 @@ $you_missed_enable = esc_attr(get_theme_mod('you_missed_enable','true'));
             if ( $newsup_you_missed_loop->have_posts() ) :
             while ( $newsup_you_missed_loop->have_posts() ) : $newsup_you_missed_loop->the_post(); ?>
                 <!--col-md-3-->
-                <div class="col-md-3 col-sm-6 pulse animated">
+                <div class="col-md-3 col-sm-12 pulse animated">
                 <div class="mg-blog-post-3">
                     <?php if(has_post_thumbnail()) { ?>
                     <div class="mg-blog-img">
@@ -84,7 +84,7 @@ $you_missed_enable = esc_attr(get_theme_mod('you_missed_enable','true'));
                         <div class="divide-line"></div>
                         <div class="row">
                             <!--col-md-4-->
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                <?php the_custom_logo(); 
                                if (display_header_text()) : ?>
                               <div class="site-branding-text">
@@ -148,28 +148,13 @@ $you_missed_enable = esc_attr(get_theme_mod('you_missed_enable','true'));
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6 text-xs">
-                                <p>
-                                <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'newsup' ) ); ?>">
-								<?php
-								/* translators: placeholder replaced with string */
-								printf( esc_html__( 'Proudly powered by %s', 'newsup' ), 'WordPress' );
-								?>
-								</a>
-								<span class="sep"> | </span>
-								<?php
-								/* translators: placeholder replaced with string */
-								printf( esc_html__( 'Theme: %1$s by %2$s.', 'newsup' ), 'Newsup', '<a href="' . esc_url( __( 'https://themeansar.com/', 'newsup' ) ) . '" rel="designer">Themeansar</a>' );
-								?>
-								</p>
+                                <p>Fatos Políticos &copy; <?php echo date('Y'); ?></p>
                             </div>
-
-
-
-                            <div class="col-md-6 text-right text-xs">
+                            <div class="col-md-12 text-xs">
                                 <?php wp_nav_menu( array(
         								'theme_location' => 'footer',
         								'container'  => 'nav-collapse collapse navbar-inverse-collapse',
-        								'menu_class' => 'info-right',
+        								'menu_class' => 'info-left',
         								'fallback_cb' => 'newsup_fallback_page_menu',
         								'walker' => new newsup_nav_walker()
         							) ); 
