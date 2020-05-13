@@ -22,7 +22,6 @@
                                                     echo '</a>';
                                                      
                                                     ?>
-                                                    <span class="post-form"><i class="fa fa-camera"></i></span>
                                                 </div>
 
                                             </div>

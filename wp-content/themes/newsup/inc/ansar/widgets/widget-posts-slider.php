@@ -76,7 +76,6 @@ if (!class_exists('Newsup_Posts_Slider')) :
                                     <?php endif; ?>
                                 </div>
                                 <article class="bottom">
-                                <span class="post-form"><i class="fa fa-camera"></i></span>
                                     <div class="mg-blog-category">
                                         <?php newsup_post_categories(); ?>
                                     </div>
