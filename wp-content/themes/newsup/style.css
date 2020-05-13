@@ -1004,7 +1004,7 @@ button.mfp-close:hover, button.mfp-close:focus {
 	transition: all 0.3s ease 0s;
 }
 .mg-blog-post-box .mg-header {
-	padding: 30px 70px;
+	padding: 30px 30px;
 }
 .mg-blog-post-box .mg-header h1{
 	font-size: 38px;
